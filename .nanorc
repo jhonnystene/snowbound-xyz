@@ -1,0 +1,38 @@
+set autoindent
+set linenumbers
+set mouse
+set smarthome
+set zap
+set nohelp
+set multibuffer
+#set suspend
+set locking
+set historylog
+
+unbind ^K main
+unbind ^U all
+unbind ^N main
+unbind ^Y all
+
+bind ^C copy all
+bind ^V paste all
+bind ^X cut all
+bind ^Q exit all
+bind ^S savefile main
+bind ^F whereis all
+bind ^Z undo all
+bind ^Y redo all
+bind ^N cancel all
+bind ^O insert main
+bind ^O browser insert
+bind ^H help all
+bind ^H exit help
+bind ^G findnext all
+bind ^R replace main
+bind ^A mark main
+
+syntax "disabled" "."
+color lightwhite,normal "."
+
+#include "/usr/share/nano/*.nanorc"
+
